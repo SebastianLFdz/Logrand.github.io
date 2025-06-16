@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Procesador de Plantilla Ajustada</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Sube tus archivos</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <label for="plantilla">Plantilla Ajustada Inicial (.xlsx):</label>
+      <input type="file" name="plantilla" id="plantilla" accept=".xlsx" required>
+
+      <label for="datos">Datos de Altas y Bajas (.xlsx):</label>
+      <input type="file" name="datos" id="datos" accept=".xlsx" required>
+
+      <input type="submit" value="Procesar Archivos">
+    </form>
+    <footer>
+      © {{ current_year }} LOGRAND ENTERTAINMENT GROUP. DERECHOS RESERVADOS
+    </footer>
+  </div>
+</body>
+</html>

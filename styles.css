@@ -1,0 +1,84 @@
+/* static/styles.css */
+
+:root {
+  --brand-red: #A50034;
+  --brand-dark: #333333;
+  --brand-gray: #6B6B6B;
+  --bg-light: #F9F9F9;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--brand-dark);
+  background-color: var(--bg-light);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: var(--white);
+  border: 1px solid var(--brand-gray);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--brand-red);
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+  color: var(--brand-dark);
+}
+
+input[type="file"],
+input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--brand-gray);
+  font-size: 1rem;
+  color: var(--brand-dark);
+}
+
+input[type="file"] {
+  background: var(--white);
+}
+
+input[type="submit"] {
+  background: var(--brand-red);
+  color: var(--white);
+  border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #870129;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--brand-gray);
+}
