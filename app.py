@@ -4,6 +4,7 @@ from procesar import procesar_archivos
 from datetime import datetime
 
 app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100 MB
 UPLOAD_FOLDER = 'uploads'
 OUTPUT_FOLDER = 'output'
 
